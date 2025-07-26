@@ -8,5 +8,5 @@ Features include search by keyword, category filters, and only showing news with
 - ReactJS
 - NewsAPI
 - Vite
-=======
+
 
