@@ -12,7 +12,7 @@ const Newsapp = () => {
   const getData=async(query)=>
   {
       const searchQuery = query || searchTitle;
-      const  response=await fetch(`https://newsapi.org/v2/everything?q=${searchTitle}&apiKey=${API_KEY}`)
+      const  response=await fetch(`https://newsapi.org/v2/everything?q=${searchQuery}&apiKey=${API_KEY}`)
       //jo data ayega use readable format me convert kar lenge->convert in json format
       const jsonData=await response.json();
       console.log(jsonData.articles);
@@ -58,6 +58,7 @@ const Newsapp = () => {
             <div className='searchBar'>
               <input type="text" placeholder ='Search News' value={searchTitle} onChange={handleInput}/>
               <button onClick={() => getData(searchTitle)}>Search</button>
+
             </div>
 
            
