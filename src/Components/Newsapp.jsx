@@ -6,7 +6,7 @@ import React, { useState, useEffect } from 'react';
 const Newsapp = () => {
   const[searchTitle,setSearchTitle]=useState("india")
   const[newsData,setnewsData]=useState([]);
-  const API_KEY="4c99bd9bace044cb9525405a2329fb93"
+  const API_KEY="YOUR_API_KEY"
 
   //Getting data when clicked on search button(calling API)
   const getData=async(query)=>
